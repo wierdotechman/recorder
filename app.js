@@ -27,11 +27,11 @@ class Recorder {
 
   async startRecording() {
     const { checked: isMicEnabled } = document.querySelector('#recordMic');
-    const { checked: isWebcamEnabled } = document.querySelector('#recordWebcam');
+    // const { checked: isWebcamEnabled } = document.querySelector('#recordWebcam');
     const { checked: isScreenEnabled } = document.querySelector('#recordScreen');
     const userMediaConstraints = {
       audio: isMicEnabled || false,
-      video: isWebcamEnabled || false
+      video: false
     };
     const displayMediaConstraints = {
       video: isScreenEnabled || false
