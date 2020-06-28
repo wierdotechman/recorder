@@ -1,0 +1,63 @@
+.container {
+  padding: 30px;
+}
+.preview-container {
+  width: 75%;
+  height: auto;
+}
+.controls-container {
+  width: 30%;
+  height: auto;
+  margin-left: 25px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.player {
+  border: 1px solid #eee;
+  width: 100%
+}
+.preview-banner {
+  font-size: 23px;
+  background-color: #333;
+  color: #fff;
+}
+.toolbar {
+  margin-top: 30px;
+}
+.button {
+  margin-right: 10px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.button:disabled {
+  cursor: not-allowed;
+}
+.button.primary {
+  border: 1px solid #dd0875;
+  background-color: #ed4fa0;
+  color: #fff;
+}
+.button.primary:disabled {
+  opacity: 0.5;
+}
+.button.secondary {
+  background-color: #eee;
+  border: 1px solid #b6b5b5;
+}
+.error-message {
+  margin: 10px;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #e34646;
+  color: #fff;
+}
+.info-message {
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px 12px;
+  background-color: #eee;
+  display: inline-block;
+  font-size: 13px;
+}

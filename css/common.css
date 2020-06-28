@@ -1,0 +1,44 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fill-container {
+  width: 100%;
+  height: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  margin: 0 auto;
+}
+.clearfix {
+  clear: both;
+}
+.right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+label {
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+  vertical-align: text-bottom;
+}

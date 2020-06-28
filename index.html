@@ -1,15 +1,48 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title> Recorder </title>
     <script src="./app.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
-    <div class="center">
-      <video autoplay muted id="localPreview" class="player" src="" width="400" height="200"></video>
-      <button class="button primary" id="startRecording" >Record</button>
-      <button class="button secondary" id="stopRecording">Stop</button>
-      <button class="button secondary" id="downloadRecording">Download</button>
-      <video autoplay controls id="recordedPreview" class="player" src="" width="400" height="200"></video>
+    <div class="flex container">
+      <div class="preview-container">
+        <div class="relative">
+          <div id="playerBanner" class="absolute fill-container flex flex-center preview-banner">
+            <p>Your preview will be shown here when recording</p>
+          </div>
+          <div id="playerMessage" class="absolute fill-container clearfix hide">
+            <p class="right info-message">This is a local preview of the recording</p>
+          </div>
+          <video autoplay muted id="localPreview" class="player"></video>
+          <video autoplay controls id="recordedPreview" class="player hide"></video>
+        </div>
+        <div class="flex toolbar">
+          <button class="button primary" id="startRecording">Record</button>
+          <button class="button secondary hide" id="stopRecording">Stop</button>
+          <button class="button secondary hide" id="downloadRecording">Download</button>
+        </div>
+      </div>
+
+      <div class="controls-container">
+        <div class="error-message text-center hide" id="errorMessage">Please select the devices to record</div>
+        <div class="flex flex-col">
+          <label class="cursor-pointer" for="recordScreen">
+            <input type="checkbox" id="recordScreen" class="config-checkbox" checked />
+            Screen
+          </label>
+          <label class="cursor-pointer" for="recordMic">
+            <input type="checkbox" id="recordMic" class="config-checkbox" checked />
+            Microphone
+          </label>
+          <!-- <label class="cursor-pointer" for="recordWebcam">
+            <input type="checkbox" id="recordWebcam" class="config-checkbox" checked />
+            Webcam
+          </label> -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
